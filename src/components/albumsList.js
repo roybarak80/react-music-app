@@ -3,8 +3,14 @@ import React from 'react';
 
 const AlbumsList = (props) => {
 
-        const showlist = (props) => {
-            console.log(props);
+        const showlist = ({albumList}) => {
+           if(albumList){
+             return albumList.map((item, index)=>{
+                 return(
+                     <img key={index} alt ={index} src={`/images/albums/${item.cover}.jpg`}/>
+                 )
+             })
+           }
             
         }
         
