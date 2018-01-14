@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 
     return (
-        <Header>
+        <header>
             <Link to="/">Music DB</Link>
-        </Header>
+        </header>
     )
 
 }
