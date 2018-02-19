@@ -3,7 +3,7 @@ import Banner from '../components/banner';
 import ArtistsList from '../components/artistsList';
 
 
-const URL_ARTISTS ='http://localhost:3004/artists'
+const URL_ARTISTS ='http://localhost:5000/api'
 class Home extends Component {
 
     constructor(props){
@@ -26,6 +26,7 @@ class Home extends Component {
         })
     }
     render (){
+        console.log(this.state.artists)
         return (
             <div>
                 <Banner/>

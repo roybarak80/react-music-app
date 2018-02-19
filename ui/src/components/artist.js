@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header';
 import AlbumsList from './albumsList';
-const REQ_URL = `http://localhost:3004/artists`;
+const REQ_URL = `http://localhost:5000/artist`;
 
 
 class Artist extends Component {
@@ -14,7 +14,7 @@ class Artist extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.match.params.id);
+      
 
 
         fetch(`${REQ_URL}/${this.props.match.params.id}`, {
@@ -30,6 +30,7 @@ class Artist extends Component {
             )
     }
     render() {
+        //console.log(this.state.artist)
         return (
             <div>
                 <Header />
