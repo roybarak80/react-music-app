@@ -1,7 +1,7 @@
 // json-server --watch db.json --port 3004
 
 export function getArtists() {
-    const request = fetch(`http://localhost:5000/artist`, { method: 'GET' })
+    const request = fetch(`http://localhost:5000/api`, { method: 'GET' })
         .then(response => response.json());
     return {
         type: 'GET_ARTISTS',
