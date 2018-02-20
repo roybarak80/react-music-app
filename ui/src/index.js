@@ -5,6 +5,7 @@ import Authen from './components/login';
 import Home from './components/home';
 import Artist from './components/artist';
 
+import Testlogin from './components/testlogin';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import promiseMiddleware from 'redux-promise';
@@ -22,6 +23,7 @@ const App =() => {
             <Route exact path="/login" component={Authen}/>   
             <Route exact path="/" component={Home}/>
             <Route path="/artist/:id" component={Artist}/>
+            <Route path="/testlogin" component={Testlogin}/>
            
         </div>
         

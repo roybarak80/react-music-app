@@ -59,6 +59,19 @@ app.get('/artist/:url_name', cors(), function (req, res) {
  
 });
 
+function requiresLogin(req, res, next) {
+  var foo =1;
+  if (foo==2) {
+    console.log(123)
+    return next();
+  } else {
+    var err = new Error('You must be logged in to view this page.');
+    res.redirect('http://localhost:3000');
+  }
+}
+app.get('/testlogin', requiresLogin, function(req, res, next) {
+  res.status(200).send('some text'); 
+});
 
 
 // app.get('*', function(request, response) {

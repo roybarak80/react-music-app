@@ -4,12 +4,12 @@ import {
     ToastMessage,
 } from "react-toastr";
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Header from './header';
+//import { Link } from 'react-router-dom';
+//import Header from './header';
 
 var firebase = require('firebase');
-var uuid = require('uuid');
-const ToastMessageFactory = React.createFactory(ToastMessage.animation);
+//var uuid = require('uuid');
+//const ToastMessageFactory = React.createFactory(ToastMessage.animation);
 let container;
 let title;
 let msg;

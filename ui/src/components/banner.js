@@ -1,16 +1,17 @@
 
-import {
-  ToastContainer,
-  ToastMessage,
-} from "react-toastr";
+// import {
+//   ToastContainer,
+//   ToastMessage,
+// } from "react-toastr";
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import createHistory from 'history/createBrowserHistory'
-const history = createHistory();
-var firebase = require('firebase');
-const ToastMessageFactory = React.createFactory(ToastMessage.animation);
+//import createHistory from 'history/createBrowserHistory';
 
-const db = firebase.database(); //the real-time database
+//const history = createHistory();
+var firebase = require('firebase');
+//const ToastMessageFactory = React.createFactory(ToastMessage.animation);
+
+//const db = firebase.database(); //the real-time database
 const auth = firebase.auth(); //the firebase auth namespace
 
 class Banner extends Component {
@@ -65,7 +66,7 @@ console.log(232);
       foo =<Link to='/logout' onClick={this.logout}>Logout</Link>;
     }
 
-    console.log(this.state.uid);
+    //console.log(this.state.uid);
 
 
     return (
@@ -75,7 +76,8 @@ console.log(232);
 
           <div className="logo">
 {foo}<br/>
-            <Link to="/">MUSIC-DB</Link>
+            <Link to="/">MUSIC-DB</Link><br/>
+            <Link to="/testlogin">test login</Link>
           </div>
         </div>
         <span></span>
