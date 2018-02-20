@@ -124,3 +124,27 @@ font-size: 14px;
     float:left;
     width: 50%;
 }
+
+/*-----------login--------*/
+
+.vertical-offset-100 {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-div{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .login-wrap{
+    background-color: #f1f1f1;
+    padding: 15px;
+    border: 1px solid #c3c2c2;
+    border-radius: 15px;
+  }
+  
+  .hide{
+    display: none;
+  }

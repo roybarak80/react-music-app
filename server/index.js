@@ -26,7 +26,15 @@ db.once('open', function () {
   console.log("DB connection alive");
 });
 // Priority serve any static files.
-app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
+//app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
+
+//login
+
+app.get('/login', cors(), function (req, res) {
+  
+  res.status(200).send('some text'); 
+});
+
 
 // Answer API requests.
 app.get('/api', cors(), function (req, res) {
@@ -53,9 +61,9 @@ app.get('/artist/:url_name', cors(), function (req, res) {
 
 
 
-app.get('*', function(request, response) {
-  response.sendFile(path.resolve(__dirname, '../react-ui/build', 'index.html'));
-});
+// app.get('*', function(request, response) {
+//   response.sendFile(path.resolve(__dirname, '../react-ui/build', 'index.html'));
+// });
 
 app.listen(PORT, function () {
   console.error(`Node cluster worker ${process.pid}: listening on port ${PORT}`);
