@@ -26,7 +26,7 @@ class Home extends Component {
         })
     }
     render (){
-        console.log(this.state.artists)
+        //console.log(this.state.artists)
         return (
             <div>
                 <Banner/>
