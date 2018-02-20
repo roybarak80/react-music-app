@@ -5,6 +5,8 @@ import {
 } from "react-toastr";
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory'
+const history = createHistory();
 var firebase = require('firebase');
 const ToastMessageFactory = React.createFactory(ToastMessage.animation);
 
@@ -47,10 +49,8 @@ class Banner extends Component {
 }
 
 logIn(event) {
-  event.preventDefault();
-     alert('you clicked me');
-    
-     this.props.history.push("/login");
+  
+   
 
 console.log(232);
 

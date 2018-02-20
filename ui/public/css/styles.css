@@ -148,3 +148,10 @@ font-size: 14px;
   .hide{
     display: none;
   }
+  .todo{
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 33px;
+    
+    color:red;
+  }
